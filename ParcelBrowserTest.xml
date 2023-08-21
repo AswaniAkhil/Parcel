@@ -1,0 +1,11 @@
+<suite name="BeoParcel" parallel="tests" thread-count="1">
+	<test name="FireFoxTest">
+		<listeners>
+			<listener class-name="utilities.ExtenetReport" />
+		</listeners>
+		<parameter name="browser" value="fireFox"></parameter>
+		<classes>
+			<class name="testCase.UserAdminCreateShipmentPageTest"></class>							
+		</classes>
+	</test>	
+</suite>

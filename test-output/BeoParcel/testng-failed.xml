@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [BeoParcel]">
+  <listeners>
+    <listener class-name="utilities.ExtenetReport"/>
+  </listeners>
+  <test thread-count="1" parallel="tests" name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="Run"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testCase.UserAdminCreateShipmentPageTest">
+        <methods>
+          <include name="verifyToCreateShipmentForDHLPacketEuropeB2B_TC55691"/>
+          <include name="beforeMethod"/>
+          <include name="verifyToCreateShipmentForDHLPacketNationalCreate2Artikel"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testCase.UserAdminCreateShipmentPageTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [BeoParcel] -->
